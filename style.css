@@ -1,0 +1,309 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* corpo visível */
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+/* Cabeçalho e menu */
+header .container{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+header nav li{
+    display: inline;
+    margin: 12px;
+    opacity: 80%;
+}
+
+header ul {
+    background-color:rgb(94, 92, 78);
+    padding: 20px 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 50px rgb(0, 0, 0); 
+    border: 1px solid rgb(214, 211, 168);
+    transition: background-color 0.3s ease-out 0.2ms;
+}
+
+header ul:hover{
+    background-color: rgb(119, 115, 95);
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    border-radius: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    transition: 0.3s ease-out 0.2ms;
+}
+
+header a:hover{
+    color: rgb(0, 0, 0);
+}
+
+/*Seção 1: Introdução e corpo principal #introduction*/
+#introduction .introduction-head{
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    justify-content: center;
+    background-image: url(./Artes/0090.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#introduction .container h1 {
+    text-align:center;
+    font-size: 150px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    text-shadow: 5px;
+}
+
+/*Seção 2: 3 quadrados*/
+.article-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align:left;
+    padding: 80px 80px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.article-skills article {
+    opacity: 80%;
+    background-color: rgb(68, 67, 56);
+    box-shadow: 0 0 50px rgb(0, 0, 0); 
+    border: 1px solid rgb(214, 211, 168);
+    transition: 0.3s ease-out 0.2ms;
+    border-radius: 10px;
+    padding: 90px 30px;
+    margin: 10px;
+    width: 25%;
+}
+
+.article-skills article:hover{
+    background-color: rgb(83, 83, 70);
+}
+
+.article-skills h3 {
+    padding-bottom: 30px;
+}
+
+/*Seção 3: Trabalhos*/
+.threedworks,
+.otherworks{
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#threedwork h2,
+#other h2 {
+    width: 1500px;
+    margin: 0 auto;
+    font-size: 80px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    padding-bottom: 10px;
+}
+
+#threedwork p,
+#other p{
+    width: 1500px;
+    margin: 0 auto;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+
+.threedworks img,
+.threedworks video,
+.otherworks img {
+    width: 400px;
+    margin: 40px 40px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.threedworks article,
+.otherworks article {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.threedworks img:hover{
+    transform: scale(1.2);
+    z-index:2;
+}
+
+.threedworks video:hover{
+    transform: scale(1.2);
+    z-index:2;
+}
+
+.otherworks img:hover{
+    transform: scale(1.2);
+    z-index:2;
+}
+
+/*Seção 4: Forms*/
+#contact .container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.forms h3 {
+    width: 1500px;
+    margin: 0 auto;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    padding-bottom: 30px;
+}
+
+#contact .forms form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.forms input{
+    width: 500px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 2px solid rgb(214, 211, 168);
+    border-radius: 30px;
+    margin: 5px;
+    padding: 20px 45px 20px 20px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.forms input::placeholder{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.forms button{
+    background-color: rgb(105, 104, 90);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    width: 500px;
+    height: 40px;
+    margin: 10px 5px;
+    transition: 0.2s;
+}
+
+.forms button:hover{
+    transform: scale(1.1);
+}
+
+.forms textarea{
+    width: 500px;
+    height: 200px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 2px solid rgb(214, 211, 168);
+    border-radius: 10px;
+    margin: 5px;
+    resize: none;
+    padding: 10px 45px 20px 20px;
+}
+
+.forms textarea::placeholder{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.forms input,
+.forms textarea {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+}
+
+#contact .socialmedia{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.socialmedia img {
+    width: 50px;
+    transition: 0.2s;
+}
+
+.socialmedia li{
+    list-style-type:none;
+    display: inline;
+    margin: 10px;
+}
+
+.socialmedia img:hover{
+    transform: scale(1.1);
+}
+
+/*Footer*/
+
+footer .container p{
+    display: flex;
+    justify-content: center;
+    margin: 20px 50px;
+}
